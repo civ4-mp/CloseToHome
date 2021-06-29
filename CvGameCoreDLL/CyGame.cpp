@@ -880,6 +880,13 @@ bool CyGame::isVictoryValid(int /*VictoryTypes*/ eIndex)
 	return m_pGame ? m_pGame->isVictoryValid((VictoryTypes)eIndex) : false;
 }
 
+void CyGame::setVictoryValid(int /*VictoryTypes*/ eIndex, bool bValid)
+{
+	if (m_pGame) {
+		m_pGame->setVictoryValid((VictoryTypes)eIndex, bValid);
+	}
+}
+
 bool CyGame::isSpecialUnitValid(int /*SpecialUnitTypes*/ eSpecialUnitType)
 {
 	return m_pGame ? m_pGame->isSpecialUnitValid((SpecialUnitTypes)eSpecialUnitType) : false;

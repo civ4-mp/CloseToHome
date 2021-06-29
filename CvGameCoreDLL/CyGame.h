@@ -213,6 +213,7 @@ public:
 	bool isCorporationFounded(int /*CorporationTypes*/ eIndex);
 	bool isVotePassed(int /*VoteTypes*/ eIndex) const;
 	bool isVictoryValid(int /*VictoryTypes*/ eIndex);
+	void setVictoryValid(int /*VictoryTypes*/ eIndex, bool bValid);
 	bool isSpecialUnitValid(int /*SpecialUnitTypes*/ eSpecialUnitType);
 	void makeSpecialUnitValid(int /*SpecialUnitTypes*/ eSpecialUnitType);
 	bool isSpecialBuildingValid(int /*SpecialBuildingTypes*/ eIndex);
